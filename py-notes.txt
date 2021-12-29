@@ -1,0 +1,138 @@
+
+https://www.pythoncheatsheet.org/
+strings
+
+course = 'python for beginnners'
+print(course[0:3]) // pyt
+another = course[:] // return all the charachers in the course variable
+len() // length of a string
+// formated string
+first = 'john'
+last = 'smith'
+msg = f' {first} [{last}] is a coder'
+course.upper() // convert syring to uppercase
+course.find('P') // returns the index of P in the string
+course.replace('beginners', 'advanced')
+'Python' in course // checks whether python is in the string returns true/false
+
+name = 'jennifer'
+print(name[1:-1]) // ennife or slice()
+[start:stop:step]
+name = "John Smith"
+funky_name = name[0:10:3] or name[::3]
+reversed_name = name[::-1]
+
+## using the slice
+
+website = "http://google.com"
+slice = slice(7,-4)
+print(website[slice])
+
+# formatted string
+firstname = 'John'
+lastname = 'Smith'
+
+msg = f'{firstname} [{lastname}] is a coder'
+
+# string methods
+course = 'python for beginners'
+print(len(course)) // 20
+print(course.upper()) // turns the string to uppercase
+print(course.lower()) // turns the string to lowercase
+print(course.find('p')) // returns the index of the p character 0
+print(course.replace('Beginnners', 'Absolute Beginners'))
+
+'Python' in course // checks to see if the word Python exits in the course. returns true/false
+
+# Arithmetic operators
+print(10 / 3) // 3.33333
+print(10 / 3) // 3
+print(10 ** 3) // 1000
+
+# precedence
+exponentiation
+multipication or divison
+addition or substraction
+
+# math functions
+import math 
+x = 2.9
+print(round(x)) // 3
+print(abs(-2.9)) // 2.9 abs always return a positive number
+round()
+math.ceil()
+math.floor
+pow()
+math.sqrt()
+max(x,y,z)
+
+# if statement
+age = int(input("How old are you? "))
+
+if age == 100:
+    print("You are a century old")
+elif age >= 18:
+    print("You are an adult")
+elif age < 0:
+    print("You haven't been born yet")
+else:
+    print("You are a child")
+
+# logical operators
+
+temp = int(input("What is the temperature outside? "))
+
+if not(temp >= 0 and temp <= 30):
+    print("the temperature is bad outside")
+    print("stay outside")
+elif not(temp < 0 or temp > 30):
+    print("the temperature is good outside")
+    print("go outside")
+
+weight = int(input("Weight: "))
+unit = input("(L)bs or (K)g:")
+
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"You are {converted} kilos")
+else:
+    converted = weight / 0.45
+    print(f"You are {converted} pounds")
+
+# while loops
+while loops have an else if all the block in the while successfully finishes without a break
+the else will the executed
+name = ""
+
+while len(name) == 0:
+    name = input("Enter your name? ")
+
+print("Hello "+name)
+
+i = 5
+while i <= 5:
+  print('*' * i)
+  i = i + 1
+
+Guessing game
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+
+while guess_count < guess_limit:
+  guess = int(input("Guess: "))
+  guess_count += 1
+  if guess == secret_number:
+     print("You won")
+     break
+else:
+     print("Sorry, you failed:")
+
+$for loops
+a statement that will execute its block of code a limited amount of times
+prices = [10, 20, 30]
+
+totalPrices = 0
+for item in prices:
+    totalPrices += item
+print(totalPrices)

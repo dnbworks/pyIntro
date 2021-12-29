@@ -1,10 +1,32 @@
 
+started = False
+startGame = True
 
-temp = int(input("What is the temperature outside? "))
+while startGame:
+    keyInput = input("> ").lower()
+    if keyInput == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to exit 
+        """)
+    elif keyInput == "start":
+        if started:
+            print("Hey!, car is already started..")
+        else:
+            started = True
+            print("Car started.. Ready to go")
+    elif keyInput == "stop":
+        if not started:
+            print("Hey!, car is already stopped..")
+        else:
+            started = False
+            print("Car stopped")
+    elif keyInput == "quit":
+        print("game quited")
+        break
+    else:
+        print("Sorry, I don't understand that")
 
-if not(temp >= 0 and temp <= 30):
-    print("the temperature is bad outside")
-    print("stay outside")
-elif not(temp < 0 or temp > 30):
-    print("the temperature is good outside")
-    print("go outside")
+
+
