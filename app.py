@@ -31,8 +31,20 @@
 #         output += 'x'
 #     print(f"""{output} """)
 
+# find total number in a list
+# numbers = [1, 2, 3, 4]
+# total = 0
+# for x in numbers:
+#     total += x
+# print(total)
 
-numbers
-
+# find the largest number in the list
+# numbers = [1, 2, 3, 4]
+# max = numbers[0]
+#
+# for number in numbers:
+#     if number > max:
+#         max = number
+# print(max)
 
 
